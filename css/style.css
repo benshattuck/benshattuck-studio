@@ -1,4 +1,13 @@
-/* Design system not yet chosen — placeholder styles only. */
+/* benshattuck.studio — "Editorial Operator" design
+   Headings: Lora (serif) · Body: Source Sans 3 (sans-serif)
+   Palette:
+     #FDFCFA page background
+     #1C1917 headings / near-black text
+     #57534E body / muted text
+     #0D7377 accent teal (links, buttons, labels)
+     #B45309 secondary accent (used sparingly, hovers)
+     #E7E5E4 borders / hairline dividers
+*/
 
 * {
   box-sizing: border-box;
@@ -6,31 +15,173 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: #1a1a1a;
+  background: #FDFCFA;
+  color: #57534E;
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
+
+/* ---------- Navigation ---------- */
 
 .site-nav {
   display: flex;
-  gap: 1.5rem;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #e5e5e5;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
 }
 
-.site-nav a {
-  color: inherit;
+.nav-wrap {
+  border-bottom: 1px solid #E7E5E4;
+}
+
+.site-name {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #1C1917;
   text-decoration: none;
 }
 
-main {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 2rem;
+.site-name:hover {
+  color: #0D7377;
 }
 
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #57534E;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #0D7377;
+}
+
+/* ---------- Main content column ---------- */
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+/* ---------- Headings ---------- */
+
+h1, h2, h3, h4 {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 600;
+  color: #1C1917;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 0.75rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin: 2rem 0 0.5rem;
+}
+
+/* ---------- Text elements ---------- */
+
+p {
+  margin: 0 0 1.25rem;
+}
+
+a {
+  color: #0D7377;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  color: #B45309;
+}
+
+ul, ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #E7E5E4;
+  margin: 2.5rem 0;
+}
+
+/* Small uppercase label, e.g. above a heading or section */
+.label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0D7377;
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- Buttons ---------- */
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  background: #0D7377;
+  color: #FDFCFA;
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0a5c5f;
+  color: #FDFCFA;
+}
+
+.button-secondary {
+  background: transparent;
+  color: #0D7377;
+  border: 1px solid #0D7377;
+}
+
+.button-secondary:hover {
+  background: #0D7377;
+  color: #FDFCFA;
+}
+
+/* ---------- Footer ---------- */
+
 .site-footer {
-  padding: 2rem;
+  border-top: 1px solid #E7E5E4;
+  padding: 1.5rem;
   text-align: center;
-  color: #666;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
+  color: #57534E;
 }
