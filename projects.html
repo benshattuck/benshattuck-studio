@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Ben Shattuck</title>
+  <meta name="description" content="Case studies from my product work: CRIO's Veeva EDC integration, AdvancedMD's Telehealth rebuild, AI workflow automation, and an offshore team standup.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
@@ -29,8 +31,8 @@
     <section class="case-study">
       <p class="label">CRIO &mdash; Regulated clinical data integration</p>
       <h2>Integrating CRIO's eSource platform with Veeva's EDC API</h2>
-      <p>CRIO needed to connect its eSource platform to Veeva's EDC API for a pharmaceutical sponsor's clinical study &mdash; a regulated, zero-to-one integration where a wrong assumption about the data model could cost a partner sponsor real time. I owned this from discovery and requirements through sponsor UAT and early release, while running a second CRIO product team at the same time.</p>
-      <p>I read Veeva's API documentation myself, tested calls in Postman, and worked directly with developers to confirm what the API would actually return before committing to a data model &mdash; that produced an immutable-ID subject-linking approach targeting sub-60-second linking for site coordinators. When CRIO's and Veeva's data models didn't reconcile on deleted records, I made the call myself: send empty strings with a distinct change-reason tag, keeping the audit trail intact without stalling engineering on the ambiguity. I also prototyped a "mapping visibility" feature in Lovable so users could see at a glance which data points were mapped, and built a Looker dashboard tracking the integration's health post-launch (time to send, success rate, failures by type).</p>
+      <p>CRIO needed to connect its eSource platform to Veeva's EDC API for a pharmaceutical sponsor's clinical study: a regulated, zero-to-one integration where a wrong assumption about the data model could cost a partner sponsor real time. I owned this from discovery and requirements through sponsor UAT and early release, while running a second CRIO product team at the same time.</p>
+      <p>I read Veeva's API documentation myself, tested calls in Postman, and worked directly with developers to confirm what the API would actually return before committing to a data model; that produced an immutable-ID subject-linking approach targeting sub-60-second linking for site coordinators. When CRIO's and Veeva's data models didn't reconcile on deleted records, I made the call myself: send empty strings with a distinct change-reason tag, keeping the audit trail intact without stalling engineering on the ambiguity. I also prototyped a "mapping visibility" feature in Lovable so users could see at a glance which data points were mapped, and built a Looker dashboard tracking the integration's health post-launch (time to send, success rate, failures by type).</p>
       <ul>
         <li>Delivered MVP through sponsor UAT and built the early-adopter site and user list</li>
         <li>Ran training webinars ahead of general release</li>
@@ -57,7 +59,7 @@
     <section class="case-study">
       <p class="label">CRIO &mdash; AI-augmented product workflows</p>
       <h2>Automating the product team's manual workflows with AI</h2>
-      <p>As my team's AI Champions representative, I built and rolled out AI-driven workflows for requirements docs, Jira tickets, regulatory updates, and code-change summaries &mdash; including a custom AI skill with integrated Python scripts, executed via CoWork tasks, that automated our product release notes.</p>
+      <p>As my team's AI Champions representative, I built and rolled out AI-driven workflows for requirements docs, Jira tickets, regulatory updates, and code-change summaries, including a custom AI skill with integrated Python scripts, executed via CoWork tasks, that automated our product release notes.</p>
       <p>I also developed a comparative analysis framework to evaluate AI-generated content against human-written content, using iterative prompt engineering to improve it, and built a usage dashboard that tracked Claude adoption and flagged overspending across peers.</p>
       <ul>
         <li>AI content and decision-making accuracy improved from 40% to 80% through iterative prompt engineering</li>
