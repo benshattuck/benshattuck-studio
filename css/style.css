@@ -144,7 +144,9 @@ hr {
   margin-bottom: 0.5rem;
 }
 
-/* ---------- Contact list ---------- */
+/* ---------- Contact links ----------
+   Populated at runtime by renderContactLinks() in js/main.js from a
+   single CONTACT_LINKS source, into any [data-contact-links] container. */
 
 .contact-list {
   list-style: none;
@@ -155,25 +157,35 @@ hr {
   margin-bottom: 0.75rem;
 }
 
-.contact-list a {
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer .icon-row {
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+}
+
+.icon-link {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
   text-decoration: none;
 }
 
-.contact-list a:hover span {
+.icon-link:hover span {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.contact-list svg {
+.icon-link svg {
   flex-shrink: 0;
-  fill: #0D7377;
-}
-
-.contact-list a:hover svg {
-  fill: #B45309;
+  fill: currentColor;
 }
 
 /* ---------- Buttons ---------- */
