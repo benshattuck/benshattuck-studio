@@ -144,6 +144,38 @@ hr {
   margin-bottom: 0.5rem;
 }
 
+/* ---------- Contact list ---------- */
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.75rem;
+}
+
+.contact-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+.contact-list a:hover span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-list svg {
+  flex-shrink: 0;
+  fill: #0D7377;
+}
+
+.contact-list a:hover svg {
+  fill: #B45309;
+}
+
 /* ---------- Buttons ---------- */
 
 .button {
